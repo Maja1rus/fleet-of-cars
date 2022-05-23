@@ -1,0 +1,32 @@
+.header {
+    position: relative;
+    padding-top: 40px;
+    background-image: url("../img/bg/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 30px);
+    background-size: cover;
+}
+
+.header__row {
+    position: relative;
+    height: 25px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 15px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/icons/icon-row-header.svg");
+    }
+}
+
+.header__nav {
+    position: relative;
+}
+
+.header__content {
+    padding-top: 57px;
+}
+

@@ -1,0 +1,31 @@
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.checkbox__real {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.checkbox__fake {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #E5E5E5;
+    transform: skew(-20deg);
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.checkbox__real:checked~.checkbox__fake {
+    background-image: url("../img/icons/icon-checkbox.svg");
+
+}
+
+.checkbox__title {}

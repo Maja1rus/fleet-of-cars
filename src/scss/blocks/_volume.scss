@@ -1,0 +1,24 @@
+.volume__title {
+    padding-bottom: 5px;
+    font-size: var(--size-normal-small-14);
+    font-weight: var(--font-bold);
+    color: #8E8D8D;
+}
+.volum__container {
+    position: relative;
+}
+.volume__count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.volume__price {
+
+}
+.volum__bold {
+    font-size: var(--size-normal-20);
+    font-weight: var(--font-bold);
+}

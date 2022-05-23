@@ -1,0 +1,77 @@
+.btn {
+    font-family: var(--font-Roboto);
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+// отправить заявку
+.btn__request {
+    padding: 15px 30px;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    text-transform: uppercase;
+    border-radius: 8px;
+    transform: skew(-20deg);
+    border: 2px solid var(--color-green);
+
+    span {
+        display: block;
+        transform: none;
+        transform: skew(20deg);
+        font-weight: var(--font-bold);
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        background-color: var(--color-white);
+
+        span {
+            color: var(--color-green);
+        }
+    }
+}
+
+.btn__down {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-green);
+    border-radius: 50%;
+    z-index: 1;
+    margin-bottom: 20px;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    &::before {
+        width: 48px;
+        height: 48px;
+        background-color: rgba(127, 175, 66, 0.3);
+    }
+
+    &::after {
+        width: 66px;
+        height: 66px;
+        background-color: rgba(127, 175, 66, 0.1);
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    svg {
+        fill: var(--color-white);
+    }
+}
